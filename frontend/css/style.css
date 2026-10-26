@@ -1,0 +1,546 @@
+/* Alejandro Rojas */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* botones */
+
+.btn-naranja {
+    display: inline-block;
+    background-color: #f35207;
+    color: white;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 1.3rem;
+    padding: 15px 40px;
+    border: 1px solid #d7b600;
+    border-radius: 50px;
+    box-shadow: 0 4px 4px #d7b600;
+    cursor: pointer;
+}
+
+.btn-naranja:hover {
+    background-color: #c94000;
+}
+
+.btn-crema {
+    display: inline-block;
+    background-color: #f8f8f1;
+    color: black;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 1.3rem;
+    padding: 10px 35px;
+    border: 1px solid #d7b600;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px #d7b600;
+    cursor: pointer;
+}
+
+.btn-crema:hover {
+    background-color: #fff6c2;
+}
+
+.btn-crema i {
+    color: #f35207;
+}
+
+.btn-gris {
+    display: inline-block;
+    background-color: white;
+    color: #333;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 1.3rem;
+    padding: 15px 35px;
+    border: 2px solid gray;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+.atras {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 55px;
+    height: 50px;
+    padding-top: 12px;
+    text-align: center;
+    background-color: #fcc;
+    border: 1px solid red;
+    border-radius: 50%;
+    font-size: 1.4rem;
+}
+
+.atras:hover {
+    background-color: #f99;
+}
+
+/* inicio */
+
+header {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+    border-bottom: 25px solid #d7b600;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+}
+
+.marca i {
+    font-size: 3.5rem;
+    color: #333;
+    margin-right: 20px;
+}
+
+.marca h1 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 2rem;
+}
+
+nav a,
+.cuenta {
+    font-family: Impact, sans-serif;
+    font-size: 1.4rem;
+    margin: 0 10px;
+}
+
+nav a:hover,
+.cuenta:hover {
+    color: #f35207;
+}
+
+.portada {
+    height: 500px;
+    padding: 60px 4vw;
+    color: white;
+    background-image: url(../img/fondo-inicio.jpg);
+    background-size: cover;
+}
+
+.portada h2 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 3rem;
+    width: 70vw;
+    margin-bottom: 40px;
+}
+
+.portada p {
+    font-style: italic;
+    width: 50vw;
+    margin-bottom: 20px;
+}
+
+.decoracion {
+    font-family: Impact, sans-serif;
+    font-size: 1.7rem;
+    margin-top: 40px;
+    margin-left: 5vw;
+}
+
+.como {
+    background-color: #ffffc9;
+    text-align: center;
+    padding: 30px 0 40px 0;
+}
+
+.como h2,
+.importante h2 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 2.8rem;
+}
+
+.pasos {
+    width: 55vw;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.paso {
+    width: 50%;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.numero {
+    width: 44px;
+    height: 44px;
+    padding-top: 8px;
+    border-radius: 50%;
+    background-color: #d65700;
+    color: white;
+    text-align: center;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 1.4rem;
+    margin-right: 12px;
+}
+
+.paso p {
+    font-size: 0.8rem;
+}
+
+.importante {
+    text-align: center;
+    padding: 70px 0;
+}
+
+.beneficios {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.beneficio {
+    width: 330px;
+    padding: 0 30px;
+    border-left: 2px solid #ffef3a;
+}
+
+.beneficio p {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+footer {
+    width: 85vw;
+    margin: 0 auto;
+    padding: 25px 0;
+    border-top: 2px solid #d7b600;
+    text-align: center;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.columnas h4 {
+    font-family: Impact, sans-serif;
+    font-size: 1.5rem;
+}
+
+.columnas p {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+footer small {
+    color: gray;
+}
+
+/* login, registro y recuperar */
+
+.fondo-login {
+    background-image: url(../img/fondo-login.jpg);
+    background-size: cover;
+}
+
+.tarjeta {
+    width: 600px;
+    margin: 80px auto;
+    padding: 50px 90px;
+    background-color: #f9f9f9;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.tarjeta h2 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 2.5rem;
+}
+
+.subtitulo {
+    color: #555;
+    margin: 10px 0 25px 0;
+}
+
+.tarjeta label,
+.datos label {
+    display: block;
+    text-align: left;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.inputs {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.olvide {
+    display: block;
+    text-align: right;
+    color: #f35207;
+    text-decoration: underline;
+}
+
+#mensaje {
+    margin: 15px 0;
+}
+
+.pie-tarjeta {
+    margin-top: 25px;
+}
+
+.pie-tarjeta a {
+    color: #f35207;
+    text-decoration: underline;
+}
+
+/* menu */
+
+.linea-amarilla {
+    height: 25px;
+    background-color: #d7b600;
+}
+
+.arriba {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 40px 50px 0 0;
+}
+
+#saludo {
+    margin-right: 20px;
+}
+
+.btn-salir {
+    color: #f35207;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 1.3rem;
+    padding: 8px 22px;
+    border: 2px solid #f35207;
+    border-radius: 50px;
+}
+
+.btn-salir:hover {
+    background-color: #f35207;
+    color: white;
+}
+
+.titulo-menu {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+    width: 640px;
+    margin: 0 auto;
+}
+
+.subrayado {
+    width: 600px;
+    height: 24px;
+    background-color: #d7b600;
+    margin: 20px auto 30px auto;
+}
+
+.tarjetas {
+    width: 1340px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.tarjeta-calc {
+    width: 670px;
+    display: flex;
+    align-items: center;
+    margin-top: -60px;
+}
+
+.tarjeta-calc.muro {
+    margin-top: 0;
+}
+
+/* las de la derecha */
+.tarjeta-calc.izquierda {
+    margin-left: auto;
+}
+
+.texto {
+    width: 460px;
+    height: 219px;
+    padding-top: 45px;
+    text-align: center;
+    border-radius: 150px 0 0 150px;
+}
+
+.izquierda .texto {
+    border-radius: 0 150px 150px 0;
+}
+
+.texto h3 {
+    font-family: Impact, sans-serif;
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* las imagenes ya tienen forma de hexagono */
+.tarjeta-calc img,
+.banner img {
+    width: 270px;
+    height: 219px;
+    margin-left: -60px;
+}
+
+.izquierda img {
+    margin-left: 0;
+    margin-right: -60px;
+    position: relative;
+    z-index: 2;
+}
+
+/* colores de cada una */
+
+.muro .texto,
+.muro h2 {
+    background-color: #e16e3d;
+}
+
+.viga .texto,
+.viga h2 {
+    background-color: #929292;
+}
+
+.columna .texto,
+.columna h2 {
+    background-color: #597d90;
+}
+
+.contrapiso .texto,
+.contrapiso h2 {
+    background-color: #343025;
+}
+
+.techo .texto,
+.techo h2 {
+    background-color: #a07970;
+}
+
+.piso .texto,
+.piso h2 {
+    background-color: #c7a795;
+}
+
+.pintura .texto,
+.pintura h2 {
+    background-color: #0275c7;
+}
+
+/* calculadoras */
+
+.banner {
+    width: 1200px;
+    margin: 60px auto 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.banner h2 {
+    width: 990px;
+    height: 219px;
+    padding-top: 60px;
+    text-align: center;
+    font-family: Impact, sans-serif;
+    font-size: 5rem;
+    color: white;
+    border-radius: 150px 0 0 150px;
+}
+
+.banner.izquierda h2 {
+    border-radius: 0 150px 150px 0;
+}
+
+.calculadora {
+    width: 1120px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.datos {
+    width: 460px;
+}
+
+.datos h2 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 2.2rem;
+}
+
+.opciones {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.resultados {
+    width: 500px;
+    height: 100%;
+    margin-top: 110px;
+    padding: 25px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+}
+
+.resultados h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.resultados p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.resultados span {
+    color: #f35207;
+    font-weight: bold;
+}
+
+/* salir */
+
+.fondo-oscuro {
+    background-color: #4a4a4a;
+}
+
+.modal {
+    width: 560px;
+    margin: 200px auto;
+    padding: 50px;
+    background-color: #f9f9f9;
+    border: 3px solid #d7b600;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.icono-salir {
+    font-size: 3rem;
+    color: #f35207;
+}
+
+.modal h2 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 2.5rem;
+    margin: 15px 0 10px 0;
+}
+
+.modal p {
+    margin-bottom: 30px;
+}

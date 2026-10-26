@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <meta name="author" content="Alejandro Rojas, Tania Casanova, Sheelsyn Garcia">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="verificarSesion(); saludar()">
+
+    <div class="linea-amarilla"></div>
+
+    <a class="atras" href="index.html"><i class="fa-solid fa-chevron-left"></i></a>
+    <a href="historial.html">Ver historial</a>
+
+
+    <div class="arriba">
+        <p id="saludo"></p>
+        <a class="btn-salir" href="salir.html">Salir <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+    </div>
+
+    <h2 class="titulo-menu">Calculadoras de materiales</h2>
+    <div class="subrayado"></div>
+
+    <div class="tarjetas">
+
+        <div class="tarjeta-calc muro">
+            <div class="texto">
+                <h3>Muro</h3>
+                <a class="btn-crema" href="muro.html">Calcular <i class="fa-solid fa-arrow-pointer"></i></a>
+            </div>
+            <img src="img/muro.png">
+        </div>
+
+        <div class="tarjeta-calc viga izquierda">
+            <img src="img/vigas.png">
+            <div class="texto">
+                <h3>Vigas</h3>
+                <a class="btn-crema" href="viga.html">Calcular <i class="fa-solid fa-arrow-pointer"></i></a>
+            </div>
+        </div>
+
+        <div class="tarjeta-calc columna">
+            <div class="texto">
+                <h3>Columnas</h3>
+                <a class="btn-crema" href="columna.html">Calcular <i class="fa-solid fa-arrow-pointer"></i></a>
+            </div>
+            <img src="img/columnas.png">
+        </div>
+
+        <div class="tarjeta-calc contrapiso izquierda">
+            <img src="img/contrapiso.png">
+            <div class="texto">
+                <h3>Contrapiso</h3>
+                <a class="btn-crema" href="contrapiso.html">Calcular <i class="fa-solid fa-arrow-pointer"></i></a>
+            </div>
+        </div>
+
+        <div class="tarjeta-calc techo">
+            <div class="texto">
+                <h3>Techo</h3>
+                <a class="btn-crema" href="techo.html">Calcular <i class="fa-solid fa-arrow-pointer"></i></a>
+            </div>
+            <img src="img/techo.png">
+        </div>
+
+        <div class="tarjeta-calc piso izquierda">
+            <img src="img/piso.png">
+            <div class="texto">
+                <h3>Piso</h3>
+                <a class="btn-crema" href="piso.html">Calcular <i class="fa-solid fa-arrow-pointer"></i></a>
+            </div>
+        </div>
+
+        <div class="tarjeta-calc pintura">
+            <div class="texto">
+                <h3>Pintura</h3>
+                <a class="btn-crema" href="pintura.html">Calcular <i class="fa-solid fa-arrow-pointer"></i></a>
+            </div>
+            <img src="img/pintura.png">
+        </div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techo</title>
+    <meta name="author" content="Alejandro Rojas, Tania Casanova, Sheelsyn Garcia">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="verificarSesion()">
+
+    <a class="atras" href="menu.html"><i class="fa-solid fa-chevron-left"></i></a>
+
+    <div class="banner techo derecha">
+        <h2>Techo</h2>
+        <img src="img/techo.png">
+    </div>
+
+    <div class="calculadora">
+        <div class="datos">
+            <h2>Calcular Techo</h2>
+            <p class="subtitulo">Completa los datos y presiona Calcular.</p>
+
+            <label>Espesor (m)</label>
+            <input class="inputs" type="number" id="espesor" placeholder="Ej: 0.1">
+            <label>Ancho (m)</label>
+            <input class="inputs" type="number" id="ancho" placeholder="Ej: 4">
+            <label>Largo (m)</label>
+            <input class="inputs" type="number" id="largo" placeholder="Ej: 5">
+
+            <p id="mensaje"></p>
+
+            <button class="btn-crema" onclick="calcularTecho()">Calcular <i class="fa-solid fa-arrow-pointer"></i></button>
+        </div>
+
+        <div class="resultados">
+            <h3>Resultado</h3>
+            <p>Cemento: <span id="resCemento">0</span> kg</p>
+            <p>Arena: <span id="resArena">0</span> m³</p>
+            <p>Piedra: <span id="resPiedra">0</span> m³</p>
+            <p>Hierro del 8: <span id="resHierro8">0</span> m</p>
+            <p>Hierro del 6: <span id="resHierro6">0</span> m</p>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "calculadora-materiales-backend",
+  "version": "1.0.0",
+  "description": "Backend basico para la calculadora de materiales de construccion (Interfaces I - FET)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muro</title>
+    <meta name="author" content="Alejandro Rojas, Tania Casanova, Sheelsyn Garcia">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="verificarSesion()">
+
+    <a class="atras" href="menu.html"><i class="fa-solid fa-chevron-left"></i></a>
+
+    <div class="banner muro derecha">
+        <h2>Muro</h2>
+        <img src="img/muro.png">
+    </div>
+
+    <div class="calculadora">
+        <div class="datos">
+            <h2>Calcular Muro de Ladrillo</h2>
+            <p class="subtitulo">Completa los datos y presiona Calcular.</p>
+
+            <label>Espesor del muro</label>
+            <div class="opciones">
+                <input type="radio" name="espesor" id="espesor20" checked> 20 cm
+                <input type="radio" name="espesor" id="espesor30"> 30 cm
+            </div>
+            <label>Largo del muro (m)</label>
+            <input class="inputs" type="number" id="largo" placeholder="Ej: 5">
+            <label>Alto del muro (m)</label>
+            <input class="inputs" type="number" id="alto" placeholder="Ej: 2.5">
+
+            <p id="mensaje"></p>
+
+            <button class="btn-crema" onclick="calcularMuro()">Calcular <i class="fa-solid fa-arrow-pointer"></i></button>
+        </div>
+
+        <div class="resultados">
+            <h3>Resultado</h3>
+            <p>Superficie: <span id="resSuperficie">0</span> m²</p>
+            <p>Cemento: <span id="resCemento">0</span> kg</p>
+            <p>Arena: <span id="resArena">0</span> m³</p>
+            <p>Ladrillos: <span id="resLadrillos">0</span> unidades</p>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

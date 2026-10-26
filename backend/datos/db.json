@@ -1,0 +1,29 @@
+{
+  "usuarios": [
+    {
+      "usuario": "Arojo",
+      "nombre": "Alejo",
+      "contrasena": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+      "rol": "usuario"
+    }
+  ],
+  "calculos": [
+    {
+      "id": 1,
+      "usuario": "Arojo",
+      "tipo": "muro",
+      "datos": {
+        "espesor": "20 cm",
+        "largo": 5,
+        "alto": 5
+      },
+      "resultados": {
+        "superficie_m2": "25.00",
+        "cemento_kg": "272.50",
+        "arena_m3": "2.25",
+        "ladrillos": 2250
+      },
+      "fecha": "23/10/2026, 6:06:41 p. m."
+    }
+  ]
+}

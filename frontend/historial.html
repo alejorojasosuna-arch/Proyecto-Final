@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Historial de calculos</title>
+    <!-- Si tu proyecto tiene un archivo de estilos, enlazalo aqui. Ejemplo: -->
+    <!-- <link rel="stylesheet" href="estilos.css"> -->
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #999; padding: 6px; text-align: left; vertical-align: top; }
+        th { background-color: #eee; }
+    </style>
+    <script src="app.js"></script>
+</head>
+<body onload="verificarSesion(); cargarHistorial();">
+
+    <h1>Historial de calculos</h1>
+    <p id="mensaje"></p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Fecha</th>
+                <th>Usuario</th>
+                <th>Tipo</th>
+                <th>Datos</th>
+                <th>Resultados</th>
+                <th>Accion</th>
+            </tr>
+        </thead>
+        <tbody id="cuerpoTabla"></tbody>
+    </table>
+
+    <br>
+    <a href="menu.html">Volver al menu</a>
+
+</body>
+</html>

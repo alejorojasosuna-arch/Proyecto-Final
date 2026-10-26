@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesion</title>
+    <meta name="author" content="Alejandro Rojas, Tania Casanova, Sheelsyn Garcia">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="fondo-login">
+
+    <a class="atras" href="index.html"><i class="fa-solid fa-chevron-left"></i></a>
+
+    <div class="tarjeta">
+        <h2>Inicia sesión</h2>
+        <p class="subtitulo">Ingresa con tu usuario y contraseña para usar las calculadoras.</p>
+
+        <label>Usuario</label>
+        <input class="inputs" type="text" id="usuario" placeholder="Ej: arojas">
+        <label>Contraseña</label>
+        <input class="inputs" type="password" id="contrasena" placeholder="********">
+        <a class="olvide" href="recuperar.html">¿Olvidaste tu contraseña?</a>
+
+        <p id="mensaje"></p>
+
+        <button class="btn-naranja" onclick="ingresar()">Ingresar <i class="fa-solid fa-arrow-pointer"></i></button>
+
+        <p class="pie-tarjeta">¿No tienes cuenta? <a href="registro.html">Regístrate</a></p>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
